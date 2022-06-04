@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('saludar/{nombre}',function(){
+    return view ('home',['nombre'=> $nombre]);
+});
